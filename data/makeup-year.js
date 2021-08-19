@@ -43,12 +43,3 @@
 			  }
     ]
 }
-/*
-Neo Nude, Foundation, Giorgio Armani, 2018, 4.2
-Voyageur, Eyeshadow, NARS, 2019, 4.7
-Ultimate Utopia, Eyeshadow, NYX, 2020, 4.5
-Body Sauce, Body Luminizing Tint, Fenty, 2021, 4.3
-Confession Refillable Lipstick Red 0, Lipstick, Hourglass Cosmetics, 2021, 4.4 
-
-Makeup>> Name, Type, Company, Release Year, Rating, 
-*/
