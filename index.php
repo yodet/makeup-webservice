@@ -63,12 +63,12 @@ function bondJSON(data){
 	$("#films").html("");
 
 	//loop through films and add template
-	/*
-	$.each(data.films, function(i,item){ //reloads
-		let myFilm = bondTemplate(item);
-		$('<div></div>').html(myFilm).appendTo('#films');
+	
+	$.each(data.makeup, function(i,item){ //reloads
+		let myMakeup = bondTemplate(item);
+		$('<div></div>').html(myMakeup).appendTo('#films');
 	});
-	*/
+	
 
 	//this loads the data on the page but its all bunched up
 	//$("#output").text(JSON.stringify(data));
@@ -85,21 +85,16 @@ function bondTemplate(film){
 
 	return `
 		<div class="film">
-				<b>Film: </b>${film.Film}<br />
-				<b>Title: </b>${film.Title}<br />
-				<b>Year: </b>${film.Year}<br />
-				<b>Director: </b>${film.Director}<br />
-				<b>Producers: </b>${film.Producers}<br />
-				<b>Writers: </b>${film.Writers}<br />
-				<b>Composer: </b>${film.Composer}<br />
-				<b>Bond: </b>${film.Bond}<br />
-				<b>Budget: </b>${film.Budget}<br />
-				<b>BoxOffice: </b>${film.BoxOffice}<br />
-				<div class="pic"><img src="thumbnails/${film.Image}" /></div>
+				<b>title: </b>${makeup.title}<br />
+				<b>Name: </b>${makeup.Name}<br />
+				<b>Type: </b>${makeup.Type}<br />
+				<b>Company: </b>${makeup.Company}<br />
+				<b>Release Year: </b>${makeup.ReleaseYear}<br />
+				<b>Rating: </b>${makeup.Rating}<br />
+				<div class="pic"><img src="thumbnails/${makeup.Image}" /></div>
 		</div>
 	
 	`;
-
 }
 
 
